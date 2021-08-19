@@ -15,11 +15,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //ボタンを押したときluckycolorの画面に移行する
-        binding.fuButton.setOnClickListener { onLuckycolorTap(it as Button?) }
+        binding.fuButton.setOnClickListener { view ->
+            onLuckycolorTap()
+        }
     }
 
     //ボタンとluckycolorを結びつける
-    private fun onLuckycolorTap(button: Button?) {
+    private fun onLuckycolorTap() {
         val intent = Intent(this, Luckycolor::class.java)
         startActivity(intent)
     }

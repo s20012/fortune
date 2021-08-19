@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/fu_button"
-        android:layout_width="113dp"
-        android:layout_height="63dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:text="占い"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
